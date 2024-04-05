@@ -60,7 +60,6 @@ nav ul li{
 }
 
 .bottom{
-    position: sticky;
     height: 5vw;
     background-color: rgb(47, 45, 46);
     color: white;
@@ -89,8 +88,8 @@ nav ul li{
 }
 
 .songItem{
-    height: 8vw 0vw;
-    width: 150%;
+    height: 5vw ;
+    width: 75vh;
     display: flex;
     background-color: white;
     color: black;
@@ -101,6 +100,7 @@ nav ul li{
     transition: all(0.4s) ease-in;
     opacity: 0.75;
     animation-fill-mode: forwards;
+    font-size: 1vw ;
     
 }
 
@@ -134,7 +134,8 @@ nav ul li{
     transform: scale(1.5);
 }
 .timestamp{
-    margin: 0 2vw;
+    margin: 0 2vh;
+    size: 1vw;
 }
 .timestamp i{
     cursor: pointer;
