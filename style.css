@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Ubuntu&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
 body{
-    background-color: antiquewhite;
+    background: linear-gradient(180deg,rgb(255, 231, 221)0%,
+    rgb(255, 211, 254)51%,
+    rgb(199, 139, 255)100%);
 }
 
 *{
@@ -11,7 +15,6 @@ body{
 
 nav{
     font-family: 'Ubuntu', sans-serif;
-
 }
 nav ul{
     display: flex;
@@ -20,6 +23,7 @@ nav ul{
     height: 65px;
     background-color: black;
     color: white;
+    cursor: pointer;
 }
 
 nav ul li{
@@ -28,7 +32,12 @@ nav ul li{
 
 .brand img{
     width: 65px;
-    padding: 0 8px;
+    padding: 0 10px;
+    margin: 0 5px;
+    transition: all 0.4s ease-in;
+}
+.brand img:hover{
+    transform: scale(1.5);
 }
 
 .brand{
@@ -39,21 +48,21 @@ nav ul li{
 }
 
 .container{
-    min-height: 60vh;
-    background-color: black;
+    height: 60vh;
+    /* background-color: black; */
     color: black;
     font-family: 'Varela Round', sans-serif;
-    display: flex;
+    justify-content: space-between;
     margin: 23px auto;
     width: 70%;
     border-radius: 12px;
     padding: 24px;
-    background-image: url('images/cover.png');
+    height: fit-content;
 }
 .bottom{
     position: sticky;
     height: 120px;
-    background-color: black;
+    background-color: rgb(47, 45, 46);
     color: white;
     bottom: 0;
     display: flex;
@@ -76,28 +85,54 @@ nav ul li{
 
 .songItemContainer{
     margin-top: 74px;
-    background-image: url('images/logo-1.png');
+    align-items: center;
 }
 
 .songItem{
     height: 50px;
+    width: 150%;
     display: flex;
     background-color: white;
-   
     color: black;
     margin: 12px 0;
     justify-content: space-between;
     align-items: center;
     border-radius: 34px;
+    transition: all(0.4s) ease-in;
+    opacity: 0.75;
+    animation-fill-mode: forwards;
     
 }
 
+.songItem:hover{
+    background:linear-gradient(180deg,rgb(255, 231, 221)0%,
+    rgb(255, 211, 254)51%,
+    rgb(199, 139, 255)100%);
+    color: rgb(7, 7, 7);
+    opacity: 1;
+    transform: matrix(1.1, 0, 0, 1.1, 0, 0);
+}
 .songItem img{
     width: 50px;
+    height: 50px;
     margin: 0 23px;
     border-radius: 34px;
+   cursor: pointer;
+   pointer-events: fill;
+   transition: all 0.4s ease-in;
 }
-
+.songItem img:hover{
+    transform: scale(1.5);
+}
+.songInfo far songItemPlay fa-play-circle
+{
+    margin: 0 23px;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+}
+.songItemPlay:hover{
+    transform: scale(1.5);
+}
 .timestamp{
     margin: 0 23px;
 }
@@ -115,12 +150,11 @@ nav ul li{
     transition: opacity 0.4s ease-in;
 }
 
-
-
 .footer{
     width: 100%;
     text-align: center;
     padding: 30px 0;
+    
 }
 
 .footer h4{
@@ -129,11 +163,11 @@ nav ul li{
     font-weight: 600;
 }
 .icons .fa{
-    color: #f44336;
     margin: 0 13px;
     cursor: pointer;
     padding: 18px 0;
 }
 .fa-heart-o{
     color: #f44336;
+    shape-image-threshold: #f44336;
 }
