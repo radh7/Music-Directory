@@ -49,19 +49,19 @@ nav ul li{
 
 .container{
     height: 60vh;
-    /* background-color: black; */
     color: black;
     font-family: 'Varela Round', sans-serif;
     justify-content: space-between;
-    margin: 23px auto;
+    margin: 1vw auto;
     width: 70%;
-    border-radius: 12px;
-    padding: 24px;
+    border-radius: 2vw;
+    padding: 2vw;
     height: fit-content;
 }
+
 .bottom{
     position: sticky;
-    height: 120px;
+    height: 5vw;
     background-color: rgb(47, 45, 46);
     color: white;
     bottom: 0;
@@ -72,7 +72,7 @@ nav ul li{
 }
 
 .icons{
-    margin-top: 14px;
+    margin-top: 0.5vw;
 }
 .icons i{
     cursor: pointer;
@@ -84,17 +84,17 @@ nav ul li{
 }
 
 .songItemContainer{
-    margin-top: 74px;
+    margin-top: 2vw;
     align-items: center;
 }
 
 .songItem{
-    height: 50px;
+    height: 8vw 0vw;
     width: 150%;
     display: flex;
     background-color: white;
     color: black;
-    margin: 12px 0;
+    margin: 1vw 0;
     justify-content: space-between;
     align-items: center;
     border-radius: 34px;
@@ -113,8 +113,8 @@ nav ul li{
     transform: matrix(1.1, 0, 0, 1.1, 0, 0);
 }
 .songItem img{
-    width: 50px;
-    height: 50px;
+    width: 5vw;
+    height: 5vw;
     margin: 0 23px;
     border-radius: 34px;
    cursor: pointer;
@@ -122,11 +122,11 @@ nav ul li{
    transition: all 0.4s ease-in;
 }
 .songItem img:hover{
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 .songInfo far songItemPlay fa-play-circle
 {
-    margin: 0 23px;
+    margin: 0 2vw;
     cursor: pointer;
     transition: all 0.4s ease-in;
 }
@@ -134,7 +134,7 @@ nav ul li{
     transform: scale(1.5);
 }
 .timestamp{
-    margin: 0 23px;
+    margin: 0 2vw;
 }
 .timestamp i{
     cursor: pointer;
@@ -158,12 +158,13 @@ nav ul li{
 }
 
 .footer h4{
-    margin-bottom: 25px;
-    margin-top: 20px;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
     font-weight: 600;
 }
 .icons .fa{
-    margin: 0 13px;
+    size: 2vw;;
+    margin: 0 1.5vw;
     cursor: pointer;
     padding: 18px 0;
 }
